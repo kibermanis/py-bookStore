@@ -8,7 +8,7 @@ def connect():
         "CREATE TABLE IF NOT EXISTS books (id INTEGER  PRIMARY KEY, title text, author text, year integer, isbn integer)")
     conn.commit()
     conn.close()
-
+connect()
 
 def insert(title, author, year, isbn):
     conn = sqlite3.connect("bookstore.db")
